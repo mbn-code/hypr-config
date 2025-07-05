@@ -203,22 +203,12 @@ misc {
     disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
 }
 
-# Enhanced HDR and Color Configuration
+# HDR Configuration
 render {
     explicit_sync = 2
     explicit_sync_kms = 2
     direct_scanout = true
 }
-
-# Environment variables for enhanced color
-env = WLR_DRM_FORCE_ASYNC_COMMIT, 1
-env = WLR_RENDERER_ALLOW_SOFTWARE, 1
-env = CLUTTER_BACKEND, wayland
-env = GDK_BACKEND, wayland,x11
-env = MOZ_ENABLE_WAYLAND, 1
-env = QT_QPA_PLATFORM, wayland;xcb
-env = SDL_VIDEODRIVER, wayland
-env = _JAVA_AWT_WM_NONREPARENTING, 1
 
 
 #############
